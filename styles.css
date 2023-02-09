@@ -3,8 +3,8 @@
     padding: 0;
   }
   body {
-    background: rgb(0,36,35);
-    background: linear-gradient(180deg, rgba(0,36,35,1) 0%, rgba(149,235,246,0) 0%, rgba(0,212,255,0.43461134453781514) 100%);
+    background: linear-gradient(0deg, rgba(0,36,35,1) 0%, rgba(149,235,246,0) 0%, rgba(0,212,255,0.43461134453781514) 100%);
+    background-repeat: no-repeat;
   }
   .main-container {
     display: block;
