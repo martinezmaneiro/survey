@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='styles.css'>
+    <title>Soft Skills</title>
+  </head>
+  <body>
+    <main>
+      <div class='main-container'>  
+        <h1 id='title'>Soft Skills Survey Form</h1>
+        <p id='description'>Thank you for taking the time to think about the importance of  soft skills.</p>
+        <hr>
+        <form id='survey-form'>
+          <div class='form-section-one'>
+            <label id='name-label'>Your name is: 
+              <input id='name' type='text' required placeholder='your name'>
+            </label>
+            <label id='number-label'> Your age is: 
+              <input id='number' type='number' required min='15' max='99' placeholder='your age'>
+            </label>
+            <label id='email-label'> Your email is: 
+              <input id='email' type='email' required placeholder='your email'>
+            </label>
+            </div>
+          <br>
+            <div class='form-section-two'>
+              <span>Any experience as a Frontend Developer?</span>
+              <select id='dropdown'>
+                <option>No experience</option>
+                <option> Less than 2 years experience</option>
+                <option> Between 2 and 4 years experience</option>
+                <option> More than 4 years experience</option>
+              </select>
+            </div>
+          <div class='form-section-three'>  
+            <span> Do you think soft skills are as important as technical skills for a job promotion as a Frontend Developer?</span> 
+            <input type='radio' name='promotion' value='yes' required>Yes
+            <input type='radio' name='promotion' value='no'>No
+          </div>
+          <div class='form-section-four'>
+            <span> You consider you are:</span>
+            <div>
+              <input type='checkbox' id='self-confident' name='self-confident' value='Self-confident'>
+              <label for='self-confident'>Self confident</label>
+            </div>
+            <div>
+              <input type='checkbox' id='communicative' name='communicative' value='Communicative'>
+              <label for='communicative'>Communicative</label>
+            </div>
+            <div>
+                <input type='checkbox' id='emphatic' name='emphatic' value='Empathic'>
+                <label for='emphatic'>Emphatic</label>
+            </div>
+            <div>
+              <input type='checkbox' id='creative' name='creative' value='Creative'>
+              <label for='creative'>Creative</label>
+            </div>
+            <div>
+              <input type='checkbox' id='team-player' name='team-player' value='Team-player'>
+              <label for='team-player'>Team player</label>
+            </div>
+          </div>
+          <div class='form-section-five'>
+            <span>Any particular soft skill you look forward to develop in the early future?</span>
+            <textarea placeholder='Skills you wanna develop' required maxlength = '100' minlength = '5'></textarea>
+          </div>
+          <button type='submit' id='submit'>Submit</button>
+        </form>
+      </div>
+    <main>
+  </body>
+</html>
