@@ -9,7 +9,7 @@
   .main-container {
     display: block;
     position: relative;
-    margin: 200px auto;
+    margin: 50px auto;
     padding: 3%;
     background-color: #A3CEE3;
     opacity: 88%;
@@ -43,7 +43,7 @@
   }
   .form-section-one input{
     float: right;
-    width: 70%;
+    width: 65%;
     text-align: center;
   }
   .form-section-two{
@@ -68,8 +68,9 @@
   }
   .form-section-five textarea{
     display: block;
-    width: 100%;
-    height: 10%
+    width: 375px;
+    height: 100px;
+    resize: none;
   }
   button[type='submit'] {
     display: inline-block;
@@ -85,3 +86,24 @@
   button[type='submit']:active{
     transform: translateY(4px);
   }
+
+@media (max-width: 320px) {
+    .main-container {
+        margin: 0px;
+        min-width: auto;
+        max-width: auto;
+    }
+    #title {
+        font-size: 1rem;
+    }
+    #description, #survey-form {
+        font-size: 0.8rem;
+    }
+    .form-section-five textarea{
+        max-width: 98%;
+        height: 100px;
+    }
+    #dropdown{
+        width: 80%;
+    }
+}
